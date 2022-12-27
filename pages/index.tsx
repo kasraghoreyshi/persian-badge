@@ -195,6 +195,15 @@ export default function Home() {
           <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-purple-700">
             https://persian-badge.ir/api/...
           </h1>
+          {/* <div className="py-4 w-full">
+            <Divider />
+          </div>
+          <button
+            className="rounded-full border border-blue-600 text-blue-6 00 px-4 py-2"
+            dir="rtl"
+          >
+            تبدیل کننده README به پرشین بدج
+          </button> */}
         </div>
         <h1 className="text-2xl font-semibold">سبک ها</h1>
         {styles.map((style) => (

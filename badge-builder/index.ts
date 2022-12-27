@@ -156,8 +156,12 @@ ${
       : ""
   } x="${
     label ? (style === "social" ? statusRectWidth + 50 : statusRectWidth) : 0
-  }" ${!label || style === "social" ? `rx="30"` : ""} width="${
-    label ? labelRectWidth : statusTextWidth + 50 + iconWidth + 35
+  }" ${
+    (!label || style === "social") && style !== "flat-square" ? `rx="30"` : ""
+  } width="${
+    label
+      ? labelRectWidth
+      : statusTextWidth + 50 + (iconComponent ? iconWidth + 35 : 0)
   }" height="200"/>
   ${
     label
