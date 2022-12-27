@@ -301,12 +301,19 @@ export default function Home() {
       <Section>
         <h1 className="text-2xl lg:text-4xl font-bold">حمایت مالی</h1>
         <Paragraph>
-          پرشین بدج، با کمک های مالی دوست داران آن می تواند به فعالیت خود ادامه
-          دهد.
+          پرشین بدج، هدف بر ری برند کردن و خرید دامنه جدا و هاست جداگانه است اما
+          برای انجام این امر، نیاز به کمک مالی شما دارد. بنابراین با کلیک کردن
+          بر روی لینک زیر، به ما در انجام این امر کمک کنید.
         </Paragraph>
-        <button className="px-4 py-2 rounded-full border border-green-500 text-green-500 text-lg">
-          حمایت مالی
-        </button>
+        <Link
+          href="https://www.coffeebede.com/kasragh"
+          target={"_blank"}
+          referrerPolicy="no-referrer"
+        >
+          <a className="px-4 py-2 rounded-full border border-green-500 text-green-500 text-lg">
+            حمایت مالی
+          </a>
+        </Link>
       </Section>
       <div className="py-8 px-12 mt-24 w-full bg-gray-100 flex items-center justify-between">
         <h1 className="text-2xl font-bold">پرشین بدج</h1>
