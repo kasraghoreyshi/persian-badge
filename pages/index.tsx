@@ -285,7 +285,7 @@ export default function Home() {
           اما گاهی ممکن است بعضی نشان ها به درستی ترجمه نشوند یا دارای ایرادی
           باشند.{" "}
           <Link
-            href="https://github.com"
+            href="https://github.com/kasraghoreyshi/persian-badge/issues"
             passHref
             target="_blank"
             referrerPolicy="no-referrer"
