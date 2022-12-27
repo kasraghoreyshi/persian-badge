@@ -3,7 +3,6 @@
 <p align="end">
   <img alt="Made With Next" src="https://persian-badge.vercel.app/api/badge/ساخته شده با Next JS-lightgray?logo=nextdotjs&logoColor=white">
   <img alt="Star" src="https://persian-badge.vercel.app/api/github/stars/kasraghoreyshi/persian-badge?logoColor=white">
- <img alt="persian-helpers NPM Version" src="https://persian-badge.vercel.app/api/npm/v/persian-helpers?label=NPM&logo=npm&logoColor=white">
 </p>
   
   
