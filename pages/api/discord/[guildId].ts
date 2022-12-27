@@ -33,7 +33,6 @@ const githubRepoStarsCount = async (
     status: `${reverse(convertDigits(guildPresenceCount))}`,
     label: "دیسکورد",
     icon: "discord",
-    logoColor: "white",
   };
 };
 
