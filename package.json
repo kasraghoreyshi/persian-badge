@@ -33,6 +33,7 @@
     "rtl-unicode-normalizer": "^1.0.2",
     "simple-icons": "^8.1.0",
     "string-pixel-width": "^1.11.0",
+    "svg-parser": "^2.0.4",
     "svg.js": "^2.7.1",
     "svgdom": "^0.1.11",
     "text-to-svg": "^3.1.5",

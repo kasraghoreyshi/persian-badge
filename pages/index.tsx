@@ -1,4 +1,8 @@
-import { IconBrandDiscord, IconBrandGithub } from "@tabler/icons";
+import {
+  IconBrandDiscord,
+  IconBrandGithub,
+  IconChevronDown,
+} from "@tabler/icons";
 import Link from "next/link";
 import Divider from "../components/Divider";
 import Paragraph from "../components/Paragraph";
@@ -175,20 +179,21 @@ export default function Home() {
         </h1>
         <Paragraph>
           اگر در حال حاضر از shields.io استفاده می کنید، کوچ کردن به پرشین بدج
-          بسیار ساده می باشد چرا که پرشین بدج با sheilds.io، سازگار است. شایان
-          ذکر است فعلا همه قابلیت های shields.io اجرا نشده اند و به مرور اجرا
-          خواهند شد، اما همیشه آن ها با shields.io سازگار خواهند بود.
+          بسیار ساده می باشد چرا که پرشین بدج با shields.io، تماما سازگار است.
+          برخی از نشان ها برای سرعت بالاتر، توسط پرشین بدج پیاده سازی شده اند
+          اما باقی نشان ها، مستقیم از shields.io استفاده می کنند و به همین
+          ترتیب، پرشین بدج با shields.io سازگاری کامل دارد.
         </Paragraph>
         <div
           className="px-8 py-4 rounded-lg bg-gray-100 flex flex-col space-y-4 items-center w-full justify-center"
           dir="ltr"
         >
-          <h1 className="text-black">
-            https://img.shields.io/badge/{`<LABEL>-<MESSAGE>-<COLOR>`}
-          </h1>
-          <h2 className="text-xl font-gray-500">یا</h2>
+          <h1 className="text-black">https://img.shields.io/...</h1>
+
+          <IconChevronDown className="w-8 h-8 text-gray-500" />
+
           <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-purple-700">
-            https://persian-badge.ir/api/badge/{`<LABEL>-<MESSAGE>-<COLOR>`}
+            https://persian-badge.ir/api/...
           </h1>
         </div>
         <h1 className="text-2xl font-semibold">سبک ها</h1>
@@ -228,7 +233,7 @@ export default function Home() {
       <Divider className="mt-12 lg:mt-24 mb-10 lg:mb-16" />
       <Section>
         <h1 className="text-2xl lg:text-4xl tracking-tight font-bold">
-          نشان های پشتیبانی شده
+          نشان های دوباره پیاده سازی شده
         </h1>
         {supportedBadges.map((badge) => {
           return (
@@ -256,6 +261,9 @@ export default function Home() {
             </div>
           );
         })}
+        <h1 className="text xl text-gray-500">
+          ... و دیگر نشان های shields.io
+        </h1>
       </Section>
       <Divider className="mt-12 lg:mt-24 mb-10 lg:mb-16" />
       <Section>
@@ -263,9 +271,10 @@ export default function Home() {
           نشان مورد نظر را پیدا نمی کنید؟
         </h1>
         <Paragraph>
-          ما به صورت پیش‌فرض تلاش کرده ایم نشان های پر کاربرد را اضافه کنیم اما
-          گاهی ممکن است شما به نشانی نیاز داشته باشید که داخل سایت وجود نداشته
-          باشد.{" "}
+          ما تلاشمان بر این است که از تمام نشان های shields.io به درستی پشتیبانی
+          کنیم و در آینده، نشان های مربوط به وبسایت های فارسی را هم اضافه کنیم.
+          اما گاهی ممکن است بعضی نشان ها به درستی ترجمه نشوند یا دارای ایرادی
+          باشند.{" "}
           <Link
             href="https://github.com"
             passHref
@@ -273,8 +282,8 @@ export default function Home() {
             referrerPolicy="no-referrer"
           >
             <a className="text-blue-500">
-              در این صورت، حتما یک Issue جدید ایجاد کنید تا ما در اسرع وقت نشان
-              مورد نظر شما را اضافه کنیم.
+              در این صورت، حتما یک Issue جدید ایجاد کنید تا ما در اسرع وقت
+              پاسخگوی شما باشیم.
             </a>
           </Link>
         </Paragraph>
