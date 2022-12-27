@@ -26,6 +26,7 @@ export const withBadge = (fc: any) => {
       { name: "label", value: label },
       { name: "labelColor", value: labelColor },
       { name: "status", value: status },
+      { name: "logoColor", value: logoColor },
       { name: "color", value: color },
       { name: "icon", value: logo }
     );
@@ -36,7 +37,6 @@ export const withBadge = (fc: any) => {
       createBadge({
         style: req.query.style,
         scale: req.query.scale ? parseFloat(queryToString(req.query.scale)) : 1,
-        logoColor: req.query.logoColor ? logoColor : undefined,
         ...badge,
         ...userOptions,
       })
