@@ -48,6 +48,8 @@ export const createBadge = ({
     return color;
   };
 
+  const padding = 100;
+
   const color = getColor(inputColor);
 
   const logoColor = getColor(inputLogoColor);
@@ -60,13 +62,13 @@ export const createBadge = ({
 
   const status = escapeBadgeInput(inputStatus);
 
-  const iconWidth = 130;
+  const iconWidth = 150;
   const icon = inputIcon;
   const iconComponent = icons[findIcon(icon?.toString() || "")];
 
   const iconSpanWidth = iconComponent
     ? label?.length
-      ? iconWidth + 30
+      ? iconWidth + 20
       : iconWidth - 18
     : 0;
   const scale = Math.min(inputScale, 10);
@@ -77,7 +79,7 @@ export const createBadge = ({
 
   const labelMetrics = label
     ? textToSVG.getMetrics(new RTLUnicodeNormalizer(label).toString(), {
-        fontSize: 110,
+        fontSize: 125,
         y: 130,
         fill: "#fff",
       })
@@ -85,7 +87,7 @@ export const createBadge = ({
   const statusMetrics = textToSVG.getMetrics(
     rtlStatus ? new RTLUnicodeNormalizer(status).toString() : status,
     {
-      fontSize: 110,
+      fontSize: 125,
       y: 130,
       fill: "#fff",
     }
@@ -98,7 +100,7 @@ export const createBadge = ({
 
   const labelSvg = label
     ? textToSVG.getSVG(new RTLUnicodeNormalizer(label).toString(), {
-        fontSize: 110,
+        fontSize: 125,
         y: 130,
         fill: "#fff",
       })
@@ -107,14 +109,15 @@ export const createBadge = ({
   const statusSvg = textToSVG.getSVG(
     rtlStatus ? new RTLUnicodeNormalizer(status).toString() : status,
     {
-      fontSize: 110,
+      fontSize: 125,
       y: 130,
       fill: "#fff",
     }
   );
 
-  const labelRectWidth = labelTextWidth + 100 + iconSpanWidth;
-  const statusRectWidth = statusTextWidth + 100 + (!label ? iconSpanWidth : 0);
+  const labelRectWidth = labelTextWidth + padding + iconSpanWidth;
+  const statusRectWidth =
+    statusTextWidth + padding + (!label ? iconSpanWidth : 0);
 
   const width =
     (label ? labelRectWidth : 0) +
@@ -199,12 +202,12 @@ ${
            ? statusRectWidth +
              labelTextWidth +
              iconWidth -
-             35 +
+             55 +
              (style === "social" ? 50 : 0)
            : iconWidth + statusTextWidth - 80
        }" role="img" fill="${
          inputLogoColor ? logoColor : `#${iconComponent.hex}`
-       }" viewBox="0 0 24 24" width="130" height="130" y="35" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="${
+       }" viewBox="0 0 24 24" width="${iconWidth}" height="${iconWidth}" y="25" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="${
          iconComponent.path
        }" /></svg>`
      : ""
