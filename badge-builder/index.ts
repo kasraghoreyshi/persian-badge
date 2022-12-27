@@ -7,6 +7,7 @@ import TextToSVG from "text-to-svg";
 import { colors } from "../data/colors";
 import { escapeBadgeInput } from "../lib/escape-badge-input";
 import { findIcon } from "../lib/find-icon";
+import { isHexColor } from "../lib/is-hex-color";
 
 export type BadgeStyles =
   | "plastic"
@@ -41,9 +42,13 @@ export const createBadge = ({
   const getColor = (input: string | undefined, returnUndefined?: boolean) => {
     if (input === undefined && returnUndefined) return undefined;
 
+    const escapedInput = escapeBadgeInput(input);
+
     const colorInColorNames = colors.find((where) => where.name === input);
 
-    const color = colorInColorNames?.hex || `#${escapeBadgeInput(input)}`;
+    const color =
+      colorInColorNames?.hex ||
+      `${isHexColor(escapedInput) ? "#" : ""}${escapedInput}`;
 
     return color;
   };
