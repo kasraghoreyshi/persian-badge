@@ -19,6 +19,10 @@ https://github.com/masir-me/masir
   
 https://github.com/kasraghoreyshi/persian-helpers
 
+https://github.com/sorensha/rust-book-farsi
+
+https://github.com/Mahdikhoubrouy/EitaaGram
+
 ## حمایت مالی از پرشین بدج
 
 پرشین بدج، هدف بر ری برند کردن و خرید دامنه جدا و هاست جداگانه است اما برای انجام این امر، نیاز به کمک مالی شما دارد. بنابراین با کلیک کردن بر روی لینک زیر، به ما در انجام این امر کمک کنید.
