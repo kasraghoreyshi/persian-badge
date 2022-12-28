@@ -23,6 +23,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "react-wrap-balancer": "^0.2.4",
     "rtl-unicode-normalizer": "^1.0.2",
     "simple-icons": "^8.1.0",
     "string-pixel-width": "^1.11.0",

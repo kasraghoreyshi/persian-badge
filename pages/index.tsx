@@ -4,6 +4,7 @@ import {
   IconChevronDown,
 } from "@tabler/icons";
 import Link from "next/link";
+import Balancer from "react-wrap-balancer";
 import Divider from "../components/Divider";
 import Paragraph from "../components/Paragraph";
 import Section from "../components/Section";
@@ -120,10 +121,13 @@ export default function Home() {
         </div>
         <div className="bg-purple-500 opacity-50 w-96 h-96 absolute right-4 bottom-8 rounded-full blur-[250px]"></div>
         <div className="bg-red-500 opacity-50 w-96 h-96 absolute left-4 top-24 rounded-full blur-[250px]"></div>
-        <div className="flex flex-col space-y-8 max-w-full lg:max-w-3xl relative z-10 text-center lg:text-start">
-          <h1 className="text-4xl lg:text-[60px] font-extrabold leading-relaxed">
-            به فارسی <span className="text-purple-500">نشان</span> داشته باشید.
-          </h1>
+        <div className="flex flex-col space-y-8 max-w-full lg:max-w-4xl relative z-10 text-center items-center lg:items-start lg:text-start">
+          <Balancer>
+            <h1 className="text-4xl lg:text-[60px] font-extrabold leading-relaxed tracking-tight">
+              به فارسی <span className="text-purple-500">نشان</span> داشته
+              باشید.
+            </h1>
+          </Balancer>
           <h2 className="text-lg lg:text-3xl font-extralight text-gray-400">
             پروژه های خود را با نشان های فارسی، زیبا تر کنید.
           </h2>
@@ -193,7 +197,7 @@ export default function Home() {
           <IconChevronDown className="w-8 h-8 text-gray-500" />
 
           <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-purple-700">
-            https://persian-badge.ir/api/...
+            https://persian-badge.vercel.app/api/...
           </h1>
           {/* <div className="py-4 w-full">
             <Divider />
