@@ -13,15 +13,11 @@
   
 ## پرشین بدج در استفاده
 
-https://github.com/matnbaz/matnbaz
-
-https://github.com/masir-me/masir
-  
-https://github.com/kasraghoreyshi/persian-helpers
-
-https://github.com/sorensha/rust-book-farsi
-
-https://github.com/Mahdikhoubrouy/EitaaGram
+- [matnbaz/matnbaz](https://github.com/matnbaz/matnbaz)
+- [masir-me/masir](https://github.com/masir-me/masir)
+- [kasraghoreyshi/persian-helpers](https://github.com/kasraghoreyshi/persian-helpers)
+- [sorensha/rust-book-farsi](https://github.com/sorensha/rust-book-farsi)
+- [Mahdikhoubrouy/EitaaGram](https://github.com/Mahdikhoubrouy/EitaaGram)
 
 ## حمایت مالی از پرشین بدج
 
