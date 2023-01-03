@@ -18,6 +18,7 @@
 - [kasraghoreyshi/persian-helpers](https://github.com/kasraghoreyshi/persian-helpers)
 - [sorensha/rust-book-farsi](https://github.com/sorensha/rust-book-farsi)
 - [Mahdikhoubrouy/EitaaGram](https://github.com/Mahdikhoubrouy/EitaaGram)
+- [GoFarsi/book](https://github.com/GoFarsi/book)
 
 ## حمایت مالی از پرشین بدج
 
